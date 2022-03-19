@@ -5,7 +5,7 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
 public class JpaConnectionFactory {
-    private EntityManager entityManager;
+    private final EntityManager entityManager;
 
     public JpaConnectionFactory() {
         EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("market");

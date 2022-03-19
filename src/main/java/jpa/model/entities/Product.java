@@ -13,7 +13,15 @@ public class Product {
     private String description;
     private BigDecimal price;
 
+    @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @JoinColumn(name = "category_id")
+    private Category category;
+
     public Product() {
+    }
+
+    public Category getCategory() {
+        return category;
     }
 
     public Long getId() {
