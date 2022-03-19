@@ -8,7 +8,7 @@ public class JpaConnectionFactory {
     private EntityManager entityManager;
 
     public JpaConnectionFactory() {
-        EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("teste_jpa");
+        EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("market");
         this.entityManager = entityManagerFactory.createEntityManager();
     }
 
