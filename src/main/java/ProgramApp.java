@@ -25,7 +25,14 @@ public class ProgramApp {
 //        productService.delete(2L);
 //        productService.update(product, 3L);
 //        List<Product> products = productService.findAll();
-        List<Product> products = productService.findByName("Notebook");
-        products.forEach(product -> LOG.info(product.toString()));
+//        List<Product> products = productService.findByName("Notebook");
+//        products.forEach(product -> LOG.info(product.toString()));
+//        Category category = new Category("Alimentos");
+//        categoryService.create(category);
+//        categoryService.delete(6L);
+//        categoryService.findAll().forEach(category -> LOG.info(category.toString()));
+//        Category category = categoryService.findByName("Informática");
+//        System.out.println(category);
+        categoryService.update(new Category("alimentos"), 7L);
     }
 }

@@ -107,7 +107,7 @@ public class ProductService {
 
         if (id == null) {
             LOG.error("O id informado não pode ser nulo.");
-            throw new IllegalArgumentException("Id cannot be null");
+            throw new IllegalArgumentException("O id informado não pode ser nulo.");
         }
 
         Product productFound = this.findById(id);
