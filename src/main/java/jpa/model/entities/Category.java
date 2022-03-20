@@ -11,6 +11,10 @@ public class Category {
 
     private String name;
 
+    public Category(String name) {
+        this.name = name.toLowerCase();
+    }
+
     public Category() {
     }
 
@@ -28,5 +32,13 @@ public class Category {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return "Category{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                '}';
     }
 }

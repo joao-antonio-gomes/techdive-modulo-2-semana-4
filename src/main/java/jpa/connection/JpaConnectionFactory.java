@@ -1,11 +1,11 @@
-package jpa.model.factory;
+package jpa.connection;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
 public class JpaConnectionFactory {
-    private final EntityManager entityManager;
+    private EntityManager entityManager;
 
     public JpaConnectionFactory() {
         EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("market");
